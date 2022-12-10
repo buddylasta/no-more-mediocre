@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Form } from '../components/Form';
 import YoutubeEmbed from '../components/Youtube';
 
 export const Workouts = () => {
@@ -33,10 +32,6 @@ export const Workouts = () => {
             >
                 Generate Workout
             </button>
-            <div className='mt-12'>
-                <p className='pb-3'>Enter an embedID to add a workout!</p>
-            </div>
-            <Form />
         </div>
     )    
 }

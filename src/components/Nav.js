@@ -8,6 +8,7 @@ export const Nav = () => {
         { name: 'Workouts', path: '/workouts' },
         { name: 'Skills', path: '/skills' },
         { name: 'Challenges', path: '/challenges' },
+        { name: 'Builder', path: '/builder'}
 
     ];
     let [open, setOpen] = useState(false);

@@ -14,13 +14,13 @@ export const Cards = () => {
         },
         {
             id: 3,
-            name: "Lorem Ipsum",
+            name: "Handstand Push-ups",
             description: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
             url: ""
         },
         {
             id: 4,
-            name: "Lorem Ipsum",
+            name: "Juggling",
             description: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
             url: ""
         },

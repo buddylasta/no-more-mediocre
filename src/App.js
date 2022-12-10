@@ -15,13 +15,13 @@ function App() {
       <QueryClientProvider client={client} >
         <Router>
           <Nav />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/workouts" element={<Workouts />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/challenges" element={<Challenges />} />
-            <Route path="*" element={<h1 className='flex flex-col items-center text-white'> Page Not Found</h1>} />
-          </Routes>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/workouts" element={<Workouts />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/challenges" element={<Challenges />} />
+              <Route path="*" element={<h1 className='flex flex-col items-center text-white'> Page Not Found</h1>} />
+            </Routes>
           <Footer />
         </Router>
       </QueryClientProvider>
