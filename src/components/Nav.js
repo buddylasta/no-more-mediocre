@@ -30,7 +30,7 @@ export const Nav = () => {
                         </li>
                     ))
                 }
-                <Button>
+                <Button url={'/workouts'}>
                     Subscribe
                 </Button>
             </ul>

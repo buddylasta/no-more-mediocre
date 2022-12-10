@@ -4,8 +4,8 @@ import { Home } from './pages/Home';
 import { Workouts } from './pages/Workouts';
 import { Skills } from './pages/Skills';
 import { Challenges } from './pages/Challenges';
-import { Nav } from "./Nav";
-import { Footer } from "./Footer";
+import { Nav } from "./components/Nav";
+import { Footer } from "./components/Footer";
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 function App() {

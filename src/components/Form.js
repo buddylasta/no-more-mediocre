@@ -16,7 +16,7 @@ export const Form = () => {
     };
 
     return (
-        <form classNames="rounded-lg" onSubmit={handleSubmit(onSubmit)}>
+        <form className="rounded-lg" onSubmit={handleSubmit(onSubmit)}>
             <input className="text-black" type="text" placeholder="Workout embedID" {...register("embedID")}></input>
             <p className="form-errors">{errors.embedID?.message}</p>
         </form>

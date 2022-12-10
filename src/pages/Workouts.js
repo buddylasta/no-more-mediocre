@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Form } from '../Form';
-import YoutubeEmbed from '../Youtube';
+import { Form } from '../components/Form';
+import YoutubeEmbed from '../components/Youtube';
 
 export const Workouts = () => {
     const [id, setId] = useState('')
