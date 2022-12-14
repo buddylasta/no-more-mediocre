@@ -1,5 +1,5 @@
 import Airtable from "airtable"
-import { env } from 'process'
+import { env } from "process"
 
 const API_KEY = env.API_KEY;
 const BASE_ID = env.BASE_ID;
