@@ -3,32 +3,20 @@
 - [Top 10 React.js Libraries You Must Use in 2022!](https://www.youtube.com/watch?v=gkKGlYRVd8A)
 - [Tailwind CSS Full Course for Beginners | Complete All-in-One Tutorial | 3 Hours](https://www.youtube.com/watch?v=lCxcTsOHrjo)
 
-## Tutorial Videos
-- [All the javascript you need to know for react](https://www.youtube.com/watch?v=m55PTVUrlnA)
-- [Javascript Tutorial](https://www.w3schools.com/js/default.asp)
-- [How I would learn ReactJS if I could start over](https://www.youtube.com/watch?v=XMgNgEc94d8)
+## Tutorials
 - [React Course For Beginners - Learn React in 8 Hours](https://www.youtube.com/watch?v=f55qeKGgB_M) 
+- [Using Airtable inside react](https://youtu.be/PJz1QlpRJeQ)
 - [How to make a responsive navbar with react js and tailwind css | React js and tailwind css tutorial](https://www.youtube.com/watch?v=74ys-dT94mA)
-
-## Bitcoin Resources
-- [Bolt Fun – place for builders to learn about and experiment with LN](https://bolt.fun/)
+- [Best way to protect Airtable api key](https://community.airtable.com/t5/development-apis/best-way-to-protect-api-key-while-using-js/td-p/136139)
 
 ## To Do
-- [x] Make navbar response to screen size
-- [x] Make Subscribe button for newsletter in navbar
-- [x] Create Hero section (image of gym equipment/human)
-- [x] Create Cards for each section (opportunities, nutrition)
-- [x] Create Opportunities page
-  - [ ] create heading on top and quick description (Here's your opportunity to get better through adversity. Choose your challenge)
-  - [ ] create pretty responses
-  - [ ] use this api for exercises https://api-ninjas.com/api/exercises
-  - [ ] make person pay an invoice before getting a workout
-- [x] Create nutrition page
-  - [ ] create heading on top and quick description
-  - [ ] create input box for api
-  - [ ] create response box for responses
-  - [ ] use this api for exercises https://api-ninjas.com/api/exercises
-
+- [] Fix navbar menu
+- [] Fix logo
+- [] Get navbar to work on mobile
+- [x] Create skills and challenges cards using airtable
+  - [] Make both lead to youtube videos/content
+- [] Make youtube embed videos responsive
+- [] Create category box for chosing types of workout videos (equipment/no equipment)
 
 
 ## Learned
@@ -37,3 +25,7 @@
 - Use ` npm install @tanstack/react-query` used at the top level to store fetched data
 - Use react-hook-form for displaying errors and submitting form
 - yup is used for form validation
+- npm install prop-types for type safety 
+- PropTypes is good if you're unwilling to learn typescript instead javascript
+- how to add element to useState array https://javascript.plainenglish.io/how-to-add-to-an-array-in-react-state-3d08ddb2e1dc
+- how to make responsie video embeds https://www.themes.dev/blog/easily-embed-responsive-youtube-video-with-tailwind-css/

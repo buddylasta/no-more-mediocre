@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import PropTypes from "prop-types";
 
 const Button = (props) => {
     return (
@@ -11,4 +12,10 @@ const Button = (props) => {
     );
 };
 
-export default Button
+Button.propTypes = {
+    url: PropTypes.string,
+    func: PropTypes.func,
+    children: PropTypes.node,
+}
+
+export default Button;
