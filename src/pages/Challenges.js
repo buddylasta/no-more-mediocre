@@ -1,10 +1,31 @@
-import { ChallengeCards } from "../components/ChallengeCards"
+import { useEffect, useState } from "react";
+import base from "../base";
+import { Card } from "../components/Card"
+
 
 export const Challenges = () => {
+    const [challenges, setChallenges] = useState([]);
+
+    useEffect(() => {
+        base("challenges")
+            .select({view: "Grid view",})
+            .eachPage((records, fetchNextPage) => {
+                setChallenges(records);
+                fetchNextPage();
+            });
+    });
+
+
     return (
-        <div className="grid grid-col justify-center my-3">
-            <h2 className="grid grid-col justify-center text-white text-4xl mb-3">Challenge Yourself</h2>
-            <ChallengeCards />
+        <div className="grid md:grid-cols-3 md:grid-rows-2 gap-8 justify-items-center place-items-center mt-7 py-7 max-w-[1240px] mx-auto">
+            {challenges.map((challenge) => (
+                <Card 
+                    key={challenge.id.toString()} 
+                    name={challenge.fields.challenges}
+                    hook={challenge.fields.hooks}
+                    description={challenge.fields.description}
+                />
+            ))}
         </div>
     )
 }

@@ -4,17 +4,14 @@ import { Home } from './pages/Home';
 import { Workouts } from './pages/Workouts';
 import { Skills } from './pages/Skills';
 import { Challenges } from './pages/Challenges';
-import { Nav } from "./components/Nav";
+import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 function App() {
-  const client = new QueryClient({})
   return (
     <div className="App">
-      <QueryClientProvider client={client} >
         <Router>
-          <Nav />
+          <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/workouts" element={<Workouts />} />
@@ -24,7 +21,6 @@ function App() {
             </Routes>
           <Footer />
         </Router>
-      </QueryClientProvider>
     </div>  
   );
 }
