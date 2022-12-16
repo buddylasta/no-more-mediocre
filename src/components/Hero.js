@@ -1,5 +1,4 @@
 import React from "react";
-import Typed from 'react-typed';
 import { Link } from "react-router-dom";
 
 export const Hero = () => {
@@ -9,13 +8,7 @@ export const Hero = () => {
                 <p className='text-[#00df9a] font-bold p-2'>GROWING THROUGH ADVERSITY</p>
                 <h1 className='md:text-6xl sm:text-5xl text-3xl font-bold md:py-6'>Grow with effort.</h1>
                 <div className="flex justify-center items-center">
-                    <p className='md:text-4xl sm:text-3xl text-xl font-bold py-4'>Fast, efficient workouts for</p>
-                    <Typed
-                        className='md:text-4xl sm:text-3xl text-xl font-bold md:pl-4 pl-2'
-                        strings={['newcomers','gymgoers', 'athletes']}
-                        typeSpeed={50}
-                        backSpeed={140} loop
-                    />
+                    <p className='md:text-4xl sm:text-3xl text-xl font-bold py-4'>Fast, efficient workouts for everyone</p>
                 </div>
                 <p className='md:text-2xl text-xl font-bold text-gray-600'>Workout, learn new skills, and challenge yourself to push past your limits.</p>
                 <Link to={'/workouts'}>
