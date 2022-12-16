@@ -8,15 +8,21 @@
 - [Using Airtable inside react](https://youtu.be/PJz1QlpRJeQ)
 - [How to make a responsive navbar with react js and tailwind css | React js and tailwind css tutorial](https://www.youtube.com/watch?v=74ys-dT94mA)
 - [Best way to protect Airtable api key](https://community.airtable.com/t5/development-apis/best-way-to-protect-api-key-while-using-js/td-p/136139)
+- [Using env variables with react and vercel](https://dev.to/manitej/the-ultimate-guide-to-using-environment-variables-with-create-react-app-2oo9)
+- [React JS & Tailwind CSS Responsive Website - Beginner Friendly](https://www.youtube.com/watch?v=ZU-drSVodBw)
 
 ## To Do
-- [] Fix navbar menu
+- [x] Fix navbar menu
 - [] Fix logo
-- [] Get navbar to work on mobile
+- [x] Get navbar to work on mobile
 - [x] Create skills and challenges cards using airtable
   - [] Make both lead to youtube videos/content
 - [] Make youtube embed videos responsive
-- [] Create category box for chosing types of workout videos (equipment/no equipment)
+- [] Make all videos no equipment
+- [] Populate airtable with data
+- [x] Get footer to appear at the bottom of mobile versions of Skills and Challenges page
+- [] figure out env variables in vercel
+- [] figure out why cards aren't hovering
 
 
 ## Learned

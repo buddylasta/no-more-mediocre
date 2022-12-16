@@ -46,8 +46,8 @@ export const Workouts = () => {
             <p className="text-2xl">No better opportunity to improve than the present!</p>
             {workout}
             <button
-                className="bg-[#bd8b46] text-white font-semibold py-2 px-6 rounded-full md:ml-8
-                    hover:bg-[#c68371] duration-500 my-3"
+                className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black
+                    hover:bg-[#00df98d1] duration-500"
                 onClick={getWorkoutUrl}
             >
                 Generate Workout

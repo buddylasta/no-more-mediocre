@@ -1,9 +1,8 @@
 import Airtable from "airtable"
 
-const API_KEY = process.env.API_KEY;
-const BASE_ID = process.env.BASE_ID;
+const { REACT_APP_API_KEY, REACT_APP_BASE_ID } = process.env
 
-const base = new Airtable({apiKey: API_KEY}).base(
-    BASE_ID);
+const base = new Airtable({apiKey: REACT_APP_API_KEY}).base(
+    REACT_APP_BASE_ID);
 
 export default base;

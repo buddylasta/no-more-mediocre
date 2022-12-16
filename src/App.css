@@ -2,14 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  background-color: black;
+body {
+  background-color: #000300;
 }
 
 ion-icon {
-  color: white;
+  font-size: 20px;
 }
 
-form-errors {
-  color: red;
+.bitcoin {
+  color: #FF9900;
 }
+
+/* .youtube {
+  color: #FF0000;
+}
+
+.twitter {
+  color: #1DA1F2;
+} */
