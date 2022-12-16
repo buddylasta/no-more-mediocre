@@ -21,8 +21,8 @@
 - [] Make all videos no equipment
 - [] Populate airtable with data
 - [x] Get footer to appear at the bottom of mobile versions of Skills and Challenges page
-- [] figure out env variables in vercel
-- [] figure out why cards aren't hovering
+- [x] figure out env variables in vercel
+- [x] figure out why cards aren't hovering
 
 
 ## Learned
