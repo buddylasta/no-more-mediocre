@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import base from '../base';
 import YoutubeEmbed from '../components/Youtube';
+import base from '../base';
 
 export const Workouts = () => {
     const [url, setUrl] = useState('')
@@ -8,20 +8,14 @@ export const Workouts = () => {
 
     useEffect(() => {
         base('workouts').select({
-            // Selecting the first 3 records in Grid view:
             view: "Grid view",
             fields: ["fldiarkodC4GhkW33"],
         }).eachPage(function page(records, fetchNextPage) {
-            // This function (`page`) will get called for each page of records.
             records.forEach(function(record) {
-                console.log("forEach loop is running")
                 let link = record.get('link')
                 setData(data => [...data, link])
             });
     
-            // To fetch the next page of records, call `fetchNextPage`.
-            // If there are more records, `page` will get called again.
-            // If there are no more records, `done` will get called.
             fetchNextPage();
     
         }, function done(err) {
@@ -36,7 +30,6 @@ export const Workouts = () => {
         {
             let numberOfWorkouts = data.length
             let index = Math.floor(Math.random() * numberOfWorkouts)
-            console.log(`this is data while getting workout ${data}`)
             setUrl(data[index])
         };
     };

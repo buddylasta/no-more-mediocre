@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import base from "../base";
 import { Card } from "../components/Card"
-
+import base from "../base";
 
 export const Skills = () => {
     const [skills, setSkills] = useState([]);
@@ -14,7 +13,6 @@ export const Skills = () => {
                 fetchNextPage();
             });
     });
-
 
     return (
         <div className="grid md:grid-cols-3 md:grid-rows-2 gap-8 justify-items-center mt-10 py-7 max-w-[1240px] mx-auto text-center">
