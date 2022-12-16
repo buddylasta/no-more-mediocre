@@ -34,4 +34,4 @@
 - npm install prop-types for type safety 
 - PropTypes is good if you're unwilling to learn typescript instead javascript
 - how to add element to useState array https://javascript.plainenglish.io/how-to-add-to-an-array-in-react-state-3d08ddb2e1dc
-- how to make responsie video embeds https://www.themes.dev/blog/easily-embed-responsive-youtube-video-with-tailwind-css/
+- how to make responsive video embeds https://www.themes.dev/blog/easily-embed-responsive-youtube-video-with-tailwind-css/
