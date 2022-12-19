@@ -17,7 +17,7 @@ export const Challenges = () => {
 
 
     return (
-        <div className="grid md:grid-cols-3 md:grid-rows-2 gap-8 justify-items-center place-items-center mt-7 py-7 max-w-[1240px] mx-auto transform transition duration-500">
+        <div className="grid md:grid-cols-3 md:grid-rows-2 gap-8 justify-items-center mt-10 py-7 max-w-[1240px] mx-auto text-center transform transition duration-500">
             {challenges.map((challenge) => (
                 <Card 
                     key={challenge.id.toString()} 

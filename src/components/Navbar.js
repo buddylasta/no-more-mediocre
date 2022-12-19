@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import Logo from '../assets/logo.png'
 
 export const Navbar = () => {
     const [ nav, setNav ] = useState(false)
@@ -18,7 +19,7 @@ export const Navbar = () => {
 
     return (
         <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
-            <h1 className='w-full text-3xl font-bold text-[#00df9a]'>No More Mediocre</h1>
+            <img className='object-contain h-30 w-60 pt-9' src={Logo} alt="Logo" />
             <ul className='hidden md:flex'>
                 {
                     links.map((link) => (
@@ -38,7 +39,7 @@ export const Navbar = () => {
             {/* mobile menu  */}
             <div className={nav ? 'fixed left-0 top-0 md:w-[35%] w-[60%] h-full border-r border-gray-900 bg-[#000300] ease-in-out duration-500 z-10' : 
                 'fixed left-[-100%] z-10'}>
-            <h1 className='w-full text-3xl font-bold m-4 text-[#00df9a]'>No More Mediocre.</h1>
+            <img className='object-contain h-30 w-60' src={Logo} alt="Logo" />
                 <ul className='uppercase p-4'>
                     {
                         links.map((link) => (

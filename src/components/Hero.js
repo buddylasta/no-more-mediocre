@@ -11,9 +11,12 @@ export const Hero = () => {
                     <p className='md:text-4xl sm:text-3xl text-xl font-bold py-4'>Fast, efficient workouts for everyone</p>
                 </div>
                 <p className='md:text-2xl text-xl font-bold text-gray-600'>Workout, learn new skills, and challenge yourself to push past your limits.</p>
-                <Link to={'/workouts'}>
-                    <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get To Work</button>
-                </Link>
+                <div className="flex justify-center items-center">
+                    <Link to={'/workouts'}>
+                        <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black
+                        hover:bg-[#00df98d1] duration-500 shadow-md shadow-[#00df98d1]'>Get To Work</button>
+                    </Link>
+                </div>
             </div>
         </div>
     );

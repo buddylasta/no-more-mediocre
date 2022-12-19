@@ -1,9 +1,8 @@
 const YoutubeEmbed = ({ url }) => (
-    <div className="shadow-sm shadow-[#bd8b46] border-solid border-2 border-[#bd8b46] rounded-lg m-5 transform transition duration-500 hover:scale-105 cursor-pointer">
+    <div className="relative pt-[50%] transform transition duration-500 hover:scale-105 cursor-pointer">
         {/* enable privacy-enhacede mode with youtube-nocookie.com */}
         <iframe
-            width={560}
-            height={315}
+            className="absolute inset-0 w-full h-full"
             loading="lazy"
             src={url}
             frameBorder={0}
