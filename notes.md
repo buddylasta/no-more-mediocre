@@ -25,3 +25,5 @@
 - remove airtable package and code
 - clean up notes
 - clean up readme
+- add links to footer icons
+- style text above responsive vid, skills, and challenges
