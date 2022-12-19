@@ -35,8 +35,8 @@ export const Workouts = () => {
     };
 
     return (
-        <div className='grid justify-items-center text-white'>
-            <p className="text-2xl">No better opportunity to improve than the present!</p>
+        <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center text-white pt-10'>
+            <p className="md:text-3xl sm:text-2xl font-medium py-3">No better opportunity to improve than the present!</p>
             {workout}
             <button
                 className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black
