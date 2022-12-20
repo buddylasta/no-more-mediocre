@@ -8,7 +8,7 @@ export const Footer = () => {
             </div>
             <div className="flex justify-between items-center gap-8">
                 <div className="youtube cursor-pointer ">
-                    <a href="https://www.youtube.com/channel/UCAJ8Q1orv_rAeXLYm9PAf1Q" target="_blank" rel="noreferrer">
+                    <a href="https://www.youtube.com/watch?v=pe8AFhpSXv0" target="_blank" rel="noreferrer">
                         <ion-icon size="large" name="logo-youtube"></ion-icon>
                     </a>
                 </div>
