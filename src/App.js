@@ -6,6 +6,7 @@ import { Skills } from './pages/Skills';
 import { Challenges } from './pages/Challenges';
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
+import { NotFound } from "./components/NotFound";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
               <Route path="/workouts" element={<Workouts />} />
               <Route path="/skills" element={<Skills />} />
               <Route path="/challenges" element={<Challenges />} />
-              <Route path="*" element={<h1 className='flex flex-col items-center text-white'> Page Not Found</h1>} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           <Footer />
         </Router>

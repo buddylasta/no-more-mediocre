@@ -1,47 +1,52 @@
 import { useEffect, useState } from 'react';
 import YoutubeEmbed from '../components/Youtube';
-import base from '../base';
+import { supabase } from '../client';
 
 export const Workouts = () => {
-    const [url, setUrl] = useState('')
-    const [data, setData] = useState([]);
+    const [fetchError, setFetchError] = useState(null)
+    const [embedIds, setEmbedIds] = useState(null);
+    const [embedId, setEmbedId] = useState('')
 
     useEffect(() => {
-        base('workouts').select({
-            view: "Grid view",
-            fields: ["fldiarkodC4GhkW33"],
-        }).eachPage(function page(records, fetchNextPage) {
-            records.forEach(function(record) {
-                let link = record.get('link')
-                setData(data => [...data, link])
-            });
-    
-            fetchNextPage();
-    
-        }, function done(err) {
-            if (err) { console.error(err); return; }
-        });
-    }, []);
+        fetchLinks()
+    }, [])
 
-    const workout = url ? <YoutubeEmbed url={url} /> : null
+    const fetchLinks = async () => {
+        const { data, error } = await supabase
+            .from('workouts')
+            .select('embedIds')
+
+            if (error) {
+                setFetchError('Could not fetch links')
+                setEmbedIds(null)
+            }
+            if (data) {
+                setEmbedIds(data)
+                setFetchError(null)
+                console.log(data)
+            }
+    }
+
+    const workout = embedId ? <YoutubeEmbed id={embedId} /> : null
 
     // Get random embedId
-    const getWorkoutUrl = () => {
+    const getUrl = () => {
         {
-            let numberOfWorkouts = data.length
+            let numberOfWorkouts = embedIds.length
             let index = Math.floor(Math.random() * numberOfWorkouts)
-            setUrl(data[index])
+            setEmbedId(embedIds[index].embedIds)
         };
     };
 
     return (
         <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center text-white pt-10'>
-            <p className="md:text-3xl sm:text-2xl font-medium py-3">No better opportunity to improve than the present!</p>
+            <p className="py-3 md:text-3xl sm:text-2xl font-extrabold capitalize">Don't think, just do!</p>
+            {fetchError && (<p>{fetchError}</p>)}
             {workout}
             <button
                 className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black
                     hover:bg-[#00df98d1] duration-500"
-                onClick={getWorkoutUrl}
+                onClick={getUrl}
             >
                 Generate Workout
             </button>
