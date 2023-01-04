@@ -10,4 +10,4 @@
 - [Making gradient text with tailwind](https://daily-dev-tips.com/posts/making-gradient-text-with-tailwind-css/)
 
 ## To Do
-- Turn B in corner into BTCPay Server or modal for donations
+- Create categories for workouts
